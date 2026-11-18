@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # BRONZE: load both CSV files exactly as they are (all columns STRING).
 # Nothing is cleaned, typed or rejected here.  Re-running a batch replaces that
 # batch only, so rows are never counted twice.
