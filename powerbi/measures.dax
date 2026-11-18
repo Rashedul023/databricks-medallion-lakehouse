@@ -1,0 +1,20 @@
+// Tables: gold_daily_sales, gold_revenue_breakdown, gold_payment_success, gold_top_customers
+// Same definitions as the Databricks dashboard (ratios are ratios of sums).
+
+Total Revenue USD = SUM ( gold_daily_sales[revenue_usd] )
+
+Total Orders = SUM ( gold_daily_sales[orders_count] )
+
+Cancelled Orders = SUM ( gold_daily_sales[cancelled_orders] )
+
+Cancellation Rate = DIVIDE ( [Cancelled Orders], [Total Orders] )
+
+Paying Orders = SUM ( gold_daily_sales[paying_orders] )
+
+Avg Revenue per Paying Order = DIVIDE ( [Total Revenue USD], [Paying Orders] )
+
+Payment Success Rate =
+    DIVIDE ( SUM ( gold_payment_success[successful_txns] ), SUM ( gold_payment_success[total_txns] ) )
+
+// Category chart uses gold_revenue_breakdown:
+Category Revenue USD = SUM ( gold_revenue_breakdown[revenue_usd] )

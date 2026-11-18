@@ -1,0 +1,19 @@
+# Source data: never commit
+orders.csv
+transactions.csv
+*.csv
+!powerbi/gold_exports/*.csv
+
+# Secrets and credentials
+.env
+*.token
+*.pem
+.databrickscfg
+.databricks/
+secrets/
+
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
