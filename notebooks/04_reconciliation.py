@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # RECONCILIATION: Bronze = accepted Silver + quarantined + duplicate losers, no overlap.
 # The notebook FAILS if any check fails, so the job stops before Gold.
 

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # SILVER: safe typing, rule validation, quarantine, deterministic de-duplication.
 #
 # Processing order (precedence) for every Bronze row:
