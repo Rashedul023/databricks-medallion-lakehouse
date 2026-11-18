@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # GOLD: business-ready tables.  Source of truth: silver_transactions (payments) joined to
 # silver_orders (order attributes).  Payments are summed per order FIRST, then joined
 # one-to-one to the order, so payment amounts are never multiplied.
