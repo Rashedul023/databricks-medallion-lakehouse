@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # PROFILE: look at the real values in Bronze, then edit 00_config.py to match.
 # Also builds the dirty-data inventory (type, field, count, percent) from the data.
 
